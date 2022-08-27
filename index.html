@@ -1,0 +1,45 @@
+<body>
+  <div id="questao1">
+    <h1 id="header">Questão 1</h1>
+    <label for="Lado A">Lado A</label>
+    <input type="number" id="ladoDeA"><br>
+    <label for="Lado B">Lado B</label>
+    <input type="number" id="ladoDeB"><br>
+    <label for="Lado C">Lado C</label>
+    <input type="number" id="ladoDeC"><br>
+    <button onClick="identificaTriangulo(ladoDeA.value,ladoDeB.value,ladoDeC.value)">Identificar</button>
+    <p id="triangulo"></p>
+  </div><br>
+
+  <div id="questao2">
+    <h1 id="header">Questão 2</h1>
+    <p>Seguindo a formula ax^2-bx+c.</p>
+    <p>Indique os valores para:</p>
+    <label for="numeroA">a:</label>
+    <input id="numA"><br>
+    <label for="numeroB">b:</label>
+    <input id="numB"><br>
+    <label for="numeroC">c:</label>
+    <input id="numC"><br>
+    <button onClick="calcularBhask(numA.value,numB.value,numC.value)">Calcular</button><br>
+    <p id="resultadoRaiz"></p>
+  </div>
+
+  <div id="questao3">
+    <h1>Questão 3</h1>
+    <label for="digiteNota">Digite a Nota do Aluno:</label><br>
+    <input type="number" id="notaAluno" placeholder="Entre 0 e 100" min="0" max="100"><br>
+    <button id="arredonda" onClick="arredondar(notaAluno.value)">Mostrar</button>
+    <p id="mostra"></p>
+  </div>
+
+  <div id="questao4">
+    <h1 id="header">Questão 4</h1>
+    <p> Digite um numero para determinar o numero de repetições</p><br>
+    <input id="numRepete">
+  </div>
+  <button onClick="luidyMoura(numRepete.value)">Mostrar</button>
+  <p id="listaNum"></p>
+  </div>
+  <script src="src/script.js"></script>
+</body>
